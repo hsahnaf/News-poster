@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নিউজ টেমপ্লেট</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; text-align: center; }
+        .container { width: 80%; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        .header { background: red; color: white; padding: 10px; font-size: 24px; font-weight: bold; }
+        .news-img { width: 100%; height: auto; border-radius: 10px; }
+        .news-text { font-size: 20px; margin: 20px 0; }
+        .footer { background: red; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">কালবেলা</div>
+        <img id="newsImage" class="news-img" src="image.jpg" alt="নিউজ ইমেজ">
+        <p id="newsText" class="news-text">নিউজের শিরোনাম এখানে আসবে...</p>
+        <div class="footer">নিউজ লিংক কমেন্টে</div>
+    </div><script>
+    function updateNews(imageSrc, text) {
+        document.getElementById('newsImage').src = imageSrc;
+        document.getElementById('newsText').innerText = text;
+    }
+    
+    // Test Update
+    updateNews('your-image-url.jpg', 'চট্টগ্রাম দখল করে সমুদ্রপথ নেওয়ার হুমকি ভারতীয় নেতার');
+</script>
+
+</body>
+</html>
